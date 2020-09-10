@@ -14,7 +14,7 @@ STYLES FOR MOBILE SIZE
 
 .grid-container {
     width: 90%;
-    margin: auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -138,6 +138,7 @@ STYLES FOR IPAD SIZE
         grid-template-areas: 
             "footer-section1 footer-section2"
             "footer-section3 footer-section4";
+        gap: 2%;
         
     }
 
@@ -156,6 +157,16 @@ STYLES FOR IPAD SIZE
     .footer-section4 {
         height: 150px;
     }
+
+    .footer-section1,  
+    .footer-section3 {
+        margin-left: 10px;
+    }
+
+    .footer-section2,
+    .footer-section4 {
+        margin-right: 10px;
+    }   
 
 }
 
@@ -182,7 +193,6 @@ STYLES FOR SMALL DESKTOP SIZE
         grid-template-rows: auto;
         grid-template-areas: 
             "footer-section1 footer-section2 footer-section3 footer-section4";
-        gap: 2%;
     }
 
    
