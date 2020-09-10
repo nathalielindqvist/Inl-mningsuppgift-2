@@ -148,7 +148,7 @@ STYLES FOR IPAD SIZE
     .box3,
     .content,
     .sidebar {
-    height: 150px;
+        height: 150px;
     }
 
     .footer-section1, 
@@ -220,7 +220,6 @@ STYLES FOR SMALL DESKTOP SIZE
 STYLES FOR LARGE DESKTOP SIZE
 ================================================================
  */
-
 
 
 @media screen and (min-width: 1200px) {
