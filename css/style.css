@@ -1,0 +1,185 @@
+/* Background */
+
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+    background-size: 90%;
+}
+
+/* 
+STYLES FOR MOBILE SIZE
+================================================================
+ */
+
+/* Grid layout */
+
+.grid-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "box1"
+        "box2"
+        "box3"
+        "content"
+        "sidebar"
+        "footer-container";
+    gap: 2%;
+}
+
+
+/* Grid area declarations */
+
+.header {
+    grid-area: header;
+}
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer-container {
+    grid-area: footer-container;
+}
+
+
+/* Grid layout footer (nested grid) */
+
+.footer-container {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "footer-section1"
+        "footer-section2"
+        "footer-section3"
+        "footer-section4";
+    border: 1px solid #333;
+}
+
+
+/* Grid area declarations for footer grid */
+
+.footer-section1 {
+    grid-area: footer-section1;
+}
+
+.footer-section2 {
+    grid-area: footer-section2;
+}
+
+.footer-section3 {
+    grid-area: footer-section3;
+}
+
+.footer-section4 {
+    grid-area: footer-section4;
+}
+
+
+/*  1. Applied border and expand elements for visability
+    2. Add margin to footer sections */
+
+.header,
+.box1,
+.box2,
+.box3,
+.content,
+.sidebar {
+    border: 1px solid #333;
+    height: 100px;
+}
+
+.footer-section1, 
+.footer-section2, 
+.footer-section3, 
+.footer-section4 {
+    border: 1px solid #333;
+    height: 100px;
+    margin: 5px;
+}
+
+
+/* 
+STYLES FOR IPAD SIZE
+================================================================
+ */
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "header header header header header header"
+            "box1 box1 box2 box2 box3 box3"
+            "content content content sidebar sidebar sidebar"
+            "footer-container footer-container footer-container footer-container footer-container footer-container";
+    }
+
+    .footer-container {
+        grid-template-columns:  repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "footer-section1 footer-section2"
+            "footer-section3 footer-section4";
+        
+    }
+
+}
+
+
+
+/* 
+STYLES FOR SMALL DESKTOP SIZE
+================================================================
+ */
+
+
+@media screen and (min-width: 960px) {
+    .grid-container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+            "header header header header header header header header header header header header"
+            "box1 box1 box1 box2 box2 box2 box2 box2 box2 box3 box3 box3"
+            "content content content content content content content content sidebar sidebar sidebar sidebar"
+            "footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container";
+    }
+
+    .footer-container {
+        grid-template-columns:  repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "footer-section1 footer-section2 footer-section3 footer-section4";
+        gap: 2%;
+    }
+
+    .footer-section1, 
+    .footer-section2, 
+    .footer-section3, 
+    .footer-section4 {
+        height: 150px;
+        margin: 5px 0;
+}
+}
+
+
+/*
+@media screen and (min-width: 1200px) {
+    
+}*/
