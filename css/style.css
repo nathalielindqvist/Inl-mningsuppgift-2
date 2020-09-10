@@ -141,6 +141,22 @@ STYLES FOR IPAD SIZE
         
     }
 
+    .header,
+    .box1,
+    .box2,
+    .box3,
+    .content,
+    .sidebar {
+    height: 150px;
+    }
+
+    .footer-section1, 
+    .footer-section2, 
+    .footer-section3, 
+    .footer-section4 {
+        height: 150px;
+    }
+
 }
 
 
@@ -169,20 +185,12 @@ STYLES FOR SMALL DESKTOP SIZE
         gap: 2%;
     }
 
-    .header,
-    .box1,
-    .box2,
-    .box3,
-    .content,
-    .sidebar {
-    height: 150px;
-    }
+   
 
     .footer-section1, 
     .footer-section2, 
     .footer-section3, 
     .footer-section4 {
-        height: 150px;
         margin: 10px 0;
     }
 
