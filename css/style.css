@@ -156,6 +156,17 @@ STYLES FOR IPAD SIZE
     .footer-section3, 
     .footer-section4 {
         height: 150px;
+        margin: 0;
+    }
+
+    .footer-section1,
+    .footer-section2 {
+        margin-top: 10px;
+    }
+
+    .footer-section3,
+    .footer-section4 {
+        margin-bottom: 20px;
     }
 
     .footer-section1,  
